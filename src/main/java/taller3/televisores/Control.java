@@ -8,6 +8,14 @@ public class Control {
         this.tv = tv;
     }
     
+    public void setTv(TV tv){
+        this.tv = tv;
+    }
+    
+    public TV getTv(){
+        return tv;
+    }
+    
     public void turnOn(){
         tv.turnOn();
     }
@@ -34,5 +42,9 @@ public class Control {
     
     public void volumenDown(){
         tv.volumenDown();
+    }
+    
+    public void setVolumen(int volumen){
+        tv.setVolumen(volumen);
     }
 }

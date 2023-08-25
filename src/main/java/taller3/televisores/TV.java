@@ -47,6 +47,9 @@ public class TV {
     }
     
     public void setVolumen(int volumen){
+        if (estado == false || volumen<0 || 7<volumen ){
+            return;
+        }
         this.volumen = volumen;
     }
     
@@ -58,11 +61,11 @@ public class TV {
         this.control = control;
     }
     
-    public int getNumTV(){
+    public static int getNumTV(){
         return numTV;
     }
     
-    public void setNumTV(int numTV){
+    public static void setNumTV(int numTV){
         TV.numTV = numTV;
     }
     
